@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Global Styles */
+    a {
+      padding: 7px;
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      margin-right: 5px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('./images/x.Jpg') center/cover no-repeat;
+      color: #FFFFFF; /* White */
+      background-blend-mode: overlay;
+      height: 100vh;
+    }
+
+    header {
+      background-color: orange;
+      color: orange;
+      padding: 20px;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    header img.logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .logout {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: green;
+      background-color: #cc0000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout:hover {
+      background-color: #990000;
+    }
+
+    .additional-phrases p {
+      margin: 10px 0;
+      font-size: 30px; /* Increased font size */
+    }
+
+    /* Specific Styles */
+    nav {
+      background-color: #0066cc;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #004080;
+    }
+
+    .search-form {
+      position: fixed;
+      top: 20px;
+      left: 50px;
+      z-index: 700; /* Ensure search bar appears above other content */
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px;
+      background-color: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <!-- JavaScript function for insert confirmation -->
+  <script>
+    function confirmInsert() {
+      return confirm("Are you sure you want to insert this record?");
+    }
+  </script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./home.html">HOME</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./about.html">ABOUT</a>
+      </li>
+      <li style="display: inline; margin-right: 10px;">
+        <a href="./contact.html">CONTACT</a>
+      </li>
+       <li style="display: inline; margin-right: 10px;">
+        <a href="./our servises.html">SERVICE</a>
+      </li>
+      <li class="dropdown" style="display: inline; margin-left: 10px;">
+        <a href="#" style="padding: 10px;">TABLES</a>
+        <div class="dropdown-contents">
+          <!-- Links inside the dropdown menu -->
+          <a href="./users.php">USERS</a>
+          <a href="./transaction.php">TRANSACTION</a> 
+          <a href="./seller.php">SELLER</a>
+          <a href="./properties.php">PROPERTIES</a>
+          <a href="./listings.php">LISTINGS</a>
+          <a href="./inquiries.php">INQUIRIES</a>
+          <a href="./imagesgallery.php">IMEGESGALLERY</a>
+          <a href="./buyer.php">BUYER</a>
+          <a href="./agents.php">AGENTS</a>
+          <a href="./locations.php">LOCATIONS</a>
+        </div>
+      </li>
+    </ul>
+    <div class="search-form">
+      <!-- Search form -->
+      <form role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="search" aria-label="search" name="query">
+        <button class="btn" type="submit">search</button>
+      </form>
+    </div>
+    <!-- LOG OUT button -->
+    <a class="logout" href="logout.php">LOG OUT</a>
+  </header>
+
+  <!-- Main Content Section -->
+  <center id="home" style="display: block;">
+    <h1 style="color: white;">WELCOME TO REAL ESTATE LISTING PLATFORM</h1>
+    <h1 style="color: white;">DISCOVER YOUR PERFECT HOME</h1>
+  </center>
+
+  <div class="additional-phrases">
+    <p>No one sells more real estate in this area than our company.</p>
+    <p>We are the real estate that families in the area trust the most when finding a property.</p>
+    <p>When you find your dream home, confide in professionals with more than 20 years of experience.</p>
+    <p>Local properties at attractive prices in ideal spots.</p>
+    <p>Your new home, at an unmatchable price.</p>
+    <p>A true home is when you feel comfortable.</p>
+    <p>If you want to make a new start, start by envisioning your future home.</p>
+    <p>You will not find a house like this one at the same price in any other area.</p>
+    <p>The best views and locations in the whole neighbourhood.</p>
+    <p>Positioned on a road that has all you could ever need to live comfortably.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <center><i style="color: white;">&copy; 2024 WEB TECHNOLOGY EXAM 222008545</i></center> 
+  </footer>
+</body>
+</html>
